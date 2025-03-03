@@ -72,6 +72,10 @@ class FlashMessages {
         // Generate a unique ID for this user and session
         $this->msgId = sha1(uniqid());
 
+        if(!$_SESSION){
+            return;
+        }
+
         // Create session array to hold our messages if it doesn't already exist
         if (!array_key_exists('flash_messages', $_SESSION)) $_SESSION['flash_messages'] = [];
 
