@@ -1,5 +1,5 @@
 <?php
-namespace Plasticbrain\FlashMessages;
+namespace Wenprise\FlashMessages;
 
 class FlashMessages {
 

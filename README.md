@@ -31,7 +31,7 @@ Thank you to everyone that used the old version, and especially to those that le
 ### With Composer
 
 ````shell
-composer require plasticbrain/php-flash-messages
+composer require wenprise/php-flash-messages
 ````
 
 ### Without composer
@@ -51,7 +51,7 @@ require '/path/to/FlashMessages.php';
 if (!session_id()) @session_start();
 	
 // Instantiate the class
-$msg = new \Plasticbrain\FlashMessages\FlashMessages();
+$msg = new \Wenprise\FlashMessages\FlashMessages();
 
 // Add messages
 $msg->info('This is an info message');
